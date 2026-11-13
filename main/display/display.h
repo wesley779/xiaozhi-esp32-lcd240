@@ -18,6 +18,7 @@
 #include <cstdint>
 #include <memory>
 #include <string>
+#include <time.h>
 #include <vector>
 
 class LvglFont;
@@ -55,6 +56,49 @@ public:
     virtual void SetTheme(Theme* theme);
     virtual Theme* GetTheme() { return current_theme_; }
     virtual void UpdateStatusBar(bool update_all = false);
+    // Idle home screen: clock / calendar / weather, shown when the device is not in an
+    // interaction state. Displays without such a screen simply ignore it.
+    virtual void SetIdleHome(bool visible) { (void)visible; }
+    // Weather push from the weather service. Values may be NAN when unknown.
+    virtual void SetWeather(float temperature, float temp_max, float temp_min, int weather_code) {
+        (void)temperature;
+        (void)temp_max;
+        (void)temp_min;
+        (void)weather_code;
+    }
+    // Feels-like temperature (apparent), pushed separately so the main weather row can
+    // render before the extra fields arrive.
+    virtual void SetWeatherFeelsLike(float apparent) { (void)apparent; }
+    // Air quality: PM2.5 concentration in ug/m3 (NAN/negative when unknown).
+    virtual void SetAirQuality(float pm25) { (void)pm25; }
+    // 未来几天的预报（从"明天"开始），用于待机第二屏。值为 NAN 表示未知。
+    virtual void SetDailyForecast(const float* maxs, const float* mins, const int* codes,
+                                  int count) {
+        (void)maxs;
+        (void)mins;
+        (void)codes;
+        (void)count;
+    }
+    // 同 WiFi 下电脑的运行状态，用于待机第三屏。online=false 表示这台电脑连不上；
+    // gpu_util/gpu_temp 传负数表示没有可读的显卡。
+    virtual void SetPcStatus(bool online, float cpu, float mem, float gpu_util, float gpu_temp,
+                             float disk_free_gb, int uptime_min, const char* name) {
+        (void)online;
+        (void)cpu;
+        (void)mem;
+        (void)gpu_util;
+        (void)gpu_temp;
+        (void)disk_free_gb;
+        (void)uptime_min;
+        (void)name;
+    }
+    // Called by the status-bar refresh when the device is idle. A display that paints the
+    // idle clock itself returns true, which tells the status bar to skip its own clock text.
+    virtual bool RenderIdleClock(const struct tm* tm_now, bool force) {
+        (void)tm_now;
+        (void)force;
+        return false;
+    }
     virtual void SetPowerSaveMode(bool on);
     virtual bool AddTextGlyphs(const std::vector<TextGlyph>& glyphs, uint8_t bpp) { return false; }
     virtual void ClearTextGlyphs() {}

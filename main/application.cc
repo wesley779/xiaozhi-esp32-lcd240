@@ -1029,6 +1029,9 @@ void Application::HandleStateChangedEvent() {
     auto led = board.GetLed();
     led->OnStateChanged();
 
+    // While idle the screen doubles as a clock / calendar / weather board.
+    display->SetIdleHome(new_state == kDeviceStateIdle);
+
     switch (new_state) {
         case kDeviceStateUnknown:
         case kDeviceStateIdle:

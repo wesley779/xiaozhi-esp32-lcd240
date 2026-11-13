@@ -1,0 +1,842 @@
+Executing action: all (aliases: build)
+Running ninja in directory C:\Users\wjtwe\Doubao\chats\2026-11-11\new-chat\xiaozhi-esp32\build
+Executing "ninja all"...
+[0/2] Re-checking globbed directories...
+[1/2] Re-running CMake...
+-- Could NOT find Git (missing: GIT_EXECUTABLE) 
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+CMake Warning at D:/esp/v6.1-beta1/esp-idf/tools/cmake/git_submodules.cmake:4 (message):
+  Git executable was not found.  Git submodule checks will not be executed.
+  If you have any build issues at all, start by adding git executable to the
+  PATH and rerun cmake to not see this warning again.
+Call Stack (most recent call first):
+  D:/esp/v6.1-beta1/esp-idf/tools/cmake/idf.cmake:41 (include)
+  D:/esp/v6.1-beta1/esp-idf/tools/cmake/project.cmake:29 (include)
+  CMakeLists.txt:8 (include)
+
+
+-- Component directory D:/esp/v6.1-beta1/esp-idf/components/idf_test does not contain a CMakeLists.txt file. No component will be added
+-- git rev-parse returned ''
+-- Minimal build - ON
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Skipping optional dependency: espressif/esp_h264
+NOTICE: Skipping optional dependency: espressif/esp_ipa
+NOTICE: Skipping optional dependency: espressif/ip101
+NOTICE: Skipping optional dependency: espressif/esp_lcd_touch_cst9220
+NOTICE: Skipping optional dependency: waveshare/esp_lcd_touch_cst3530
+NOTICE: Skipping optional dependency: espressif/esp_lcd_jd9365
+NOTICE: Skipping optional dependency: waveshare/esp_lcd_hx8394
+NOTICE: Skipping optional dependency: waveshare/esp_lcd_st7703
+NOTICE: Skipping optional dependency: espressif/esp_lcd_ili9881c
+NOTICE: Skipping optional dependency: espressif/esp_lcd_ek79007
+NOTICE: Skipping optional dependency: espressif/esp_hosted
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espfriends/servo_dog_ctrl
+NOTICE: Skipping optional dependency: espressif/touch_slider_sensor
+NOTICE: Skipping optional dependency: espressif/touch_button_sensor
+NOTICE: Skipping optional dependency: kevincoooool/esp_lcd_st7102
+NOTICE: Skipping optional dependency: espressif/freetype
+NOTICE: Skipping optional dependency: espressif/libjpeg-turbo
+NOTICE: Skipping optional dependency: espressif/libpng
+NOTICE: Skipping optional dependency: espressif/lz4
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "78/esp-ml307": "3.8.1" -> "3.8.2"
+Dependency "78/esp-wifi-connect": "3.3.1" -> "3.3.3"
+Dependency "espressif/bq27220": "0.1.3" -> "0.2.0"
+Dependency "espressif/esp_cam_sensor": "2.6.0" -> "2.7.0"
+Dependency "espressif/esp_video": "2.5.0" -> "2.6.0"
+Dependency "espressif/usb_host_uvc": "2.5.2" -> "2.6.0"
+Consider running "idf.py update-dependencies" to update your lock file.
+NOTICE: Processing 74 dependencies:
+NOTICE: [1/74] 78/esp-ml307 (3.8.1)
+NOTICE: [2/74] 78/esp-wifi-connect (3.3.1)
+NOTICE: [3/74] 78/esp_lcd_nv3023 (1.0.1)
+NOTICE: [4/74] 78/uart-eth-modem (0.7.1)
+NOTICE: [5/74] 78/uart-uhci (0.4.1)
+NOTICE: [6/74] 78/xiaozhi-fonts (2.0.0)
+NOTICE: [7/74] cube32esp/xpowerslib (0.3.3)
+NOTICE: [8/74] esphome/esp-hub75 (0.3.6)
+NOTICE: [9/74] espressif/adc_battery_estimation (0.2.2)
+NOTICE: [10/74] espressif/bmi270_sensor (0.1.2)
+NOTICE: [11/74] espressif/bq27220 (0.1.3)
+NOTICE: [12/74] espressif/button (4.2.3)
+NOTICE: [13/74] espressif/cjson (1.7.19~2)
+NOTICE: [14/74] espressif/cmake_utilities (0.5.0)
+NOTICE: [15/74] espressif/dl_fft (0.8.0)
+NOTICE: [16/74] espressif/esp-dsp (1.8.0)
+NOTICE: [17/74] espressif/esp-sr (2.4.7)
+NOTICE: [18/74] espressif/esp32-camera (2.1.9)
+NOTICE: [19/74] espressif/esp_audio_codec (2.5.0)
+NOTICE: [20/74] espressif/esp_audio_effects (1.3.0~1)
+NOTICE: [21/74] espressif/esp_cam_sensor (2.6.0)
+NOTICE: [22/74] espressif/esp_codec_dev (1.6.2)
+NOTICE: [23/74] espressif/esp_image_effects (1.2.0)
+NOTICE: [24/74] espressif/esp_io_expander (1.2.1)
+NOTICE: [25/74] espressif/esp_io_expander_tca9554 (2.0.3)
+NOTICE: [26/74] espressif/esp_io_expander_tca95xx_16bit (2.0.2)
+NOTICE: [27/74] espressif/esp_jpeg (1.3.2)
+NOTICE: [28/74] espressif/esp_lcd_axs15231b (2.1.1)
+NOTICE: [29/74] espressif/esp_lcd_co5300 (2.2.0)
+NOTICE: [30/74] espressif/esp_lcd_gc9a01 (2.0.4)
+NOTICE: [31/74] espressif/esp_lcd_ili9341 (2.1.0)
+NOTICE: [32/74] espressif/esp_lcd_panel_io_additions (1.0.1~1)
+NOTICE: [33/74] espressif/esp_lcd_spd2010 (2.0.0~1)
+NOTICE: [34/74] espressif/esp_lcd_st7701 (2.0.3)
+NOTICE: [35/74] espressif/esp_lcd_st77916 (2.0.2)
+NOTICE: [36/74] espressif/esp_lcd_st77922 (2.1.1)
+NOTICE: [37/74] espressif/esp_lcd_st7796 (1.4.0)
+NOTICE: [38/74] espressif/esp_lcd_touch (1.2.1)
+NOTICE: [39/74] espressif/esp_lcd_touch_cst816s (1.1.2)
+NOTICE: [40/74] espressif/esp_lcd_touch_ft5x06 (1.1.1)
+NOTICE: [41/74] espressif/esp_lcd_touch_gt1151 (1.1.1)
+NOTICE: [42/74] espressif/esp_lcd_touch_gt911 (1.2.1)
+NOTICE: [43/74] espressif/esp_lcd_touch_st7123 (1.0.2)
+NOTICE: [44/74] espressif/esp_lvgl_port (2.9.0)
+NOTICE: [45/74] espressif/esp_mmap_assets (1.4.0)
+NOTICE: [46/74] espressif/esp_new_jpeg (1.0.2)
+NOTICE: [47/74] espressif/esp_sccb_intf (1.0.0)
+NOTICE: [48/74] espressif/esp_video (2.5.0)
+NOTICE: [49/74] espressif/freetype (2.14.3~1)
+NOTICE: [50/74] espressif/gmf_fft (1.0.0)
+NOTICE: [51/74] espressif/i2c_bus (1.5.2)
+NOTICE: [52/74] espressif/iot_eth (1.1.0)
+NOTICE: [53/74] espressif/iot_usbh_cdc (3.1.1)
+NOTICE: [54/74] espressif/iot_usbh_rndis (0.3.1)
+NOTICE: [55/74] espressif/knob (1.1.0)
+NOTICE: [56/74] espressif/led_strip (3.0.3)
+NOTICE: [57/74] espressif/mqtt (1.1.0)
+NOTICE: [58/74] espressif/usb (1.6.0)
+NOTICE: [59/74] espressif/usb_host_uvc (2.5.2)
+NOTICE: [60/74] espressif2022/esp_emote_assets (0.1.2)
+NOTICE: [61/74] espressif2022/esp_emote_expression (1.0.2)
+NOTICE: [62/74] espressif2022/esp_emote_gfx (3.0.5)
+NOTICE: [63/74] espressif2022/image_player (1.1.1)
+NOTICE: [64/74] laride/heatshrink (0.4.1)
+NOTICE: [65/74] lvgl/lvgl (9.5.0)
+NOTICE: [66/74] m5stack/m5ioe1 (1.0.9)
+NOTICE: [67/74] m5stack/m5pm1 (1.0.7)
+NOTICE: [68/74] tny-robotics/sh1106-esp-idf (1.0.2)
+NOTICE: [69/74] txp666/otto-emoji-gif-component (1.4.0)
+NOTICE: [70/74] waveshare/custom_io_expander_ch32v003 (2.0.0)
+NOTICE: [71/74] waveshare/esp_lcd_sh8601 (1.0.2)
+NOTICE: [72/74] waveshare/esp_lcd_touch_cst9217 (1.0.4)
+NOTICE: [73/74] wvirgil123/sscma_client (1.0.4)
+NOTICE: [74/74] idf (6.1.0)
+-- CONFIG_ESP32P4_SELECTS_REV_LESS_V3 is 
+-- IDF_VERSION_MAJOR is 6
+-- IDF_VERSION_MINOR is 1
+-- IDF_VERSION_PATCH is 0
+-- TARGET_LIB_PATH is set to: esp32s3
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5;esp32c61 SoCs
+NOTICE: Skipping optional dependency: espressif/ip101
+NOTICE: Skipping optional dependency: espressif/esp_lcd_touch_cst9220
+NOTICE: Skipping optional dependency: waveshare/esp_lcd_touch_cst3530
+NOTICE: Skipping optional dependency: espressif/esp_lcd_jd9365
+NOTICE: Skipping optional dependency: waveshare/esp_lcd_hx8394
+NOTICE: Skipping optional dependency: waveshare/esp_lcd_st7703
+NOTICE: Skipping optional dependency: espressif/esp_lcd_ili9881c
+NOTICE: Skipping optional dependency: espressif/esp_lcd_ek79007
+NOTICE: Skipping optional dependency: espressif/esp_hosted
+NOTICE: Skipping optional dependency: espressif/esp_wifi_remote
+NOTICE: Skipping optional dependency: espfriends/servo_dog_ctrl
+NOTICE: Skipping optional dependency: espressif/touch_slider_sensor
+NOTICE: Skipping optional dependency: espressif/touch_button_sensor
+NOTICE: Skipping optional dependency: kevincoooool/esp_lcd_st7102
+NOTICE: Skipping optional dependency: espressif/esp_h264
+NOTICE: Skipping optional dependency: espressif/esp_ipa
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/sdkconfig
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:58: SR_WN_WN9S_HILEXIN: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:62: SR_WN_WN9S_HIESP: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:66: SR_WN_WN9S_NIHAOXIAOZHI: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:70: SR_WN_WN9S_HIJASON: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:79: SR_WN_WN9_HILEXIN: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:83: SR_WN_WN9_HIESP: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:87: SR_WN_WN9L_JA_KONNICHIHAESP_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:91: SR_WN_WN9L_FR_BONJOURESP_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:95: SR_WN_WN9_NIHAOMIAOBAN_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:99: SR_WN_WN9_XIAOAITONGXUE: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:103: SR_WN_WN9L_XIAOAITONGXUE: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:107: SR_WN_WN9_NIHAOXIAOZHI_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:111: SR_WN_WN9L_NIHAOXIAOZHI_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:115: SR_WN_WN9_ALEXA: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:119: SR_WN_WN9_JARVIS_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:123: SR_WN_WN9_COMPUTER_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:127: SR_WN_WN9_HEYWILLOW_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:131: SR_WN_WN9_HIMFIVE: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:135: SR_WN_WN9_SOPHIA_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:139: SR_WN_WN9_HEYWANDA_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:143: SR_WN_WN9_HIJOLLY_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:147: SR_WN_WN9_HIFAIRY_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:151: SR_WN_WN9_HEYPRINTER_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:155: SR_WN_WN9_MYCROFT_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:159: SR_WN_WN9_HIJOY_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:163: SR_WN_WN9_HIJASON_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:167: SR_WN_WN9_ASTROLABE_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:171: SR_WN_WN9_HEYILY_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:175: SR_WN_WN9_BLUECHIP_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:179: SR_WN_WN9_HIANDY_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:183: SR_WN_WN9_HEYIVY_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:187: SR_WN_WN9L_HISTACKCHAN_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:191: SR_WN_WN9_HEYKIRA_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:195: SR_WN_WN9L_HEYGIGI_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:199: SR_WN_WN9_XIAOLONGXIAOLONG_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:203: SR_WN_WN9_HIMIAOMIAO_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:207: SR_WN_WN9_MIAOMIAOTONGXUE_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:211: SR_WN_WN9_NIHAOXIAOXIN_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:215: SR_WN_WN9_XIAOMEITONGXUE_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:219: SR_WN_WN9_HILILI_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:223: SR_WN_WN9_HITELLY_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:227: SR_WN_WN9_XIAOBINXIAOBIN_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:231: SR_WN_WN9_HAIXIAOWU_TTS: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:235: SR_WN_WN9_XIAOYAXIAOYA_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:239: SR_WN_WN9_LINAIBAN_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:243: SR_WN_WN9_XIAOSUROU_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:247: SR_WN_WN9_XIAOYUTONGXUE_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:251: SR_WN_WN9_XIAOMINGTONGXUE_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:255: SR_WN_WN9_XIAOKANGTONGXUE_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:259: SR_WN_WN9_XIAOJIANXIAOJIAN_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:263: SR_WN_WN9_XIAOTEXIAOTE_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:267: SR_WN_WN9_NIHAOXIAOYI_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:271: SR_WN_WN9_NIHAOBAIYING_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:275: SR_WN_WN9_NIHAODONGDONG_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:279: SR_WN_WN9_HIWALLE_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:283: SR_WN_WN9_XIAOLUXIAOLU_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:287: SR_WN_WN9_NIHAOXIAOAN_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:291: SR_WN_WN9_NI3HAO3XIAO3MAI4_TTS2: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:295: SR_WN_WN9_NI3HAO3XIAO3RUI4_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:299: SR_WN_WN9_HAI1XIAO3OU1_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:303: SR_WN_WN9_XIAO3JIA1XIAO3JIA1_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:307: SR_WN_WN9_XIAO3FENG1XIAO3FENG1_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:311: SR_WN_WN9_HAI1XIAO3XIANG4_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr/Kconfig.projbuild:315: SR_WN_WN9L_NI3HAO3XING1BAO3_TTS3: 'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: D:/esp/v6.1-beta1/esp-idf/components/bt/host/nimble/Kconfig.in:1421: BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: D:/esp/v6.1-beta1/esp-idf/components/fatfs/Kconfig:240: FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: D:/esp/v6.1-beta1/esp-idf/components/fatfs/Kconfig:245: FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: D:/esp/v6.1-beta1/esp-idf/components/bt/sdkconfig.rename.esp32s3:4: duplicate rename mapping for CONFIG_BT_NIMBLE_COEX_PHY_CODED_TX_RX_TLIM_EN: previous target CONFIG_BT_LE_COEX_PHY_CODED_TX_RX_TLIM_EN, new target CONFIG_BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM_EN - last mapping is used
+NOTE: D:/esp/v6.1-beta1/esp-idf/components/bt/sdkconfig.rename.esp32s3:5: duplicate rename mapping for CONFIG_BT_NIMBLE_COEX_PHY_CODED_TX_RX_TLIM_DIS: previous target CONFIG_BT_LE_COEX_PHY_CODED_TX_RX_TLIM_DIS, new target CONFIG_BT_CTRL_COEX_PHY_CODED_TX_RX_TLIM_DIS - last mapping is used
+Loading defaults file C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/sdkconfig.defaults...
+NOTE: C:\Users\wjtwe\AppData\Local\Temp\kconfgen_tmpdqurzcxu:33: CONFIG_NEWLIB_NANO_FORMAT was replaced with CONFIG_LIBC_NEWLIB_NANO_FORMAT
+Loading defaults file C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/sdkconfig.defaults.esp32s3...
+Loading defaults file C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/sdkconfig.defaults.board...
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished with notifications
+NOTE: D:/esp/v6.1-beta1/esp-idf/components/esp_libc/Kconfig:106: LIBC_NEWLIB_NANO_FORMAT has user-set value y from C:\Users\wjtwe\AppData\Local\Temp\kconfgen_tmpdqurzcxu but is not visible (disabled dependency)
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/lvgl__lvgl/Kconfig:1229: LV_USE_CALENDAR_HEADER_ARROW has user-set value n from C:\Users\wjtwe\AppData\Local\Temp\kconfgen_tmpdqurzcxu but is not visible (disabled dependency)
+NOTE: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/lvgl__lvgl/Kconfig:1233: LV_USE_CALENDAR_HEADER_DROPDOWN has user-set value n from C:\Users\wjtwe\AppData\Local\Temp\kconfgen_tmpdqurzcxu but is not visible (disabled dependency)
+HINT: Disabled symbols/choices are not written into sdkconfig file. Setting their user value has no effect.
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- App "xiaozhi" version: 2.5.3
+-- Setting up mbedtls configuration
+-- Linkage type is PUBLIC
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_hal_wdt/esp32s3/rom.wdt.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_system/ld/esp32s3/memory.ld.in
+--   -> Preprocessing .in script: D:/esp/v6.1-beta1/esp-idf/components/esp_system/ld/esp32s3/memory.ld.in
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+--   -> Preprocessing .in script: D:/esp/v6.1-beta1/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+--   -> Applying ldgen processing: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_master.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_50.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_smp.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_dtm.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_test.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_scan.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libc.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/esp_hal_regi2c/esp32s3/rom.regi2c.ld
+-- Adding linker script D:/esp/v6.1-beta1/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- I2C_BUS: 1.5.2
+78/esp_wifi_connect: IDF_VERSION_MAJOR is 6
+78/esp_wifi_connect: idf_component_register for v6 used
+-- ESP_LCD_NV3023: 1.0.1
+-- IOT_ETH: 1.1.0
+-- ADC_BATTERY_ESTIMATION: 0.2.2
+-- BUTTON: 4.2.3
+-- CONFIG_ESP32P4_SELECTS_REV_LESS_V3 is 
+-- IDF_VERSION_MAJOR is 6
+-- IDF_VERSION_MINOR is 1
+-- IDF_VERSION_PATCH is 0
+-- TARGET_LIB_PATH is set to: esp32s3
+-- ESP_LCD_AXS15231B: 2.1.1
+-- ESP_LCD_CO5300: 2.2.0
+-- ESP_LCD_GC9A01: 2.0.4
+-- ESP_LCD_ILI9341: 2.1.0
+-- ESP_LCD_PANEL_IO_ADDITIONS: 1.0.1
+-- ESP_LCD_SPD2010: 2.0.0
+-- ESP_LCD_ST7701: 2.0.3
+-- ESP_LCD_ST77916: 2.0.2
+-- ESP_LCD_ST77922: 2.1.1
+-- ESP_LCD_ST7796: 1.4.0
+-- ESP_LCD_TOUCH_ST7123: 1.0.2
+-- LVGL version: 9.5.0
+-- ESP_MMAP_ASSETS: 1.4.0
+-- ESP_CAM_SENSOR: 2.6.0
+-- ESP_VIDEO: 2.5.0
+-- IOT_USBH_CDC: 3.1.1
+-- IOT_USBH_RNDIS: 0.3.1
+-- KNOB: 1.1.0
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+-- Could NOT find PNG (missing: PNG_LIBRARY PNG_PNG_INCLUDE_DIR) 
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+-- ESP_EMOTE_EXPRESSION: 1.0.2
+-- Otto Emoji GIF Component: gifs only at C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/txp666__otto-emoji-gif-component/gifs
+-- ESP_LCD_SH8601: 1.0.2
+-- Default assets build configured: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/build/generated_assets.bin
+-- Generated default assets flash configured: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/build/generated_assets.bin -> assets partition
+CMake Warning at D:/esp/v6.1-beta1/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  'D:/esp/v6.1-beta1/esp-idf/components/esp_wifi/wifi_apps/roaming_app/include'
+  belongs to component esp_wifi but is being used by component
+  wpa_supplicant.  It is recommended to define the component dependency for
+  wpa_supplicant on the component esp_wifi, i.e.  'idf_component_register(...
+  PRIV_REQUIRES esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and
+  specify the included directory as idf_component_register(...
+  PRIV_INCLUDE_DIRS <dir relative to component>) in the CMakeLists.txt of
+  component esp_wifi.
+Call Stack (most recent call first):
+  D:/esp/v6.1-beta1/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  D:/esp/v6.1-beta1/esp-idf/CMakeLists.txt:356 (__component_validation_run_checks)
+
+
+CMake Warning at D:/esp/v6.1-beta1/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  'D:/esp/v6.1-beta1/esp-idf/components/esp_wifi/wifi_apps/roaming_app/src'
+  belongs to component esp_wifi but is being used by component
+  wpa_supplicant.  It is recommended to define the component dependency for
+  wpa_supplicant on the component esp_wifi, i.e.  'idf_component_register(...
+  PRIV_REQUIRES esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and
+  specify the included directory as idf_component_register(...
+  PRIV_INCLUDE_DIRS <dir relative to component>) in the CMakeLists.txt of
+  component esp_wifi.
+Call Stack (most recent call first):
+  D:/esp/v6.1-beta1/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  D:/esp/v6.1-beta1/esp-idf/CMakeLists.txt:356 (__component_validation_run_checks)
+
+
+CMake Warning at D:/esp/v6.1-beta1/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  'D:/esp/v6.1-beta1/esp-idf/components/esp_wifi/wifi_apps/include/apps_private'
+  belongs to component esp_wifi but is being used by component
+  wpa_supplicant.  It is recommended to define the component dependency for
+  wpa_supplicant on the component esp_wifi, i.e.  'idf_component_register(...
+  PRIV_REQUIRES esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and
+  specify the included directory as idf_component_register(...
+  PRIV_INCLUDE_DIRS <dir relative to component>) in the CMakeLists.txt of
+  component esp_wifi.
+Call Stack (most recent call first):
+  D:/esp/v6.1-beta1/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  D:/esp/v6.1-beta1/esp-idf/CMakeLists.txt:356 (__component_validation_run_checks)
+
+
+CMake Warning at D:/esp/v6.1-beta1/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  'D:/esp/v6.1-beta1/esp-idf/components/wpa_supplicant/src' belongs to
+  component wpa_supplicant but is being used by component esp_wifi.  It is
+  recommended to define the component dependency for esp_wifi on the
+  component wpa_supplicant, i.e.  'idf_component_register(...  PRIV_REQUIRES
+  wpa_supplicant)' in the CMakeLists.txt of esp_wifi, and specify the
+  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir
+  relative to component>) in the CMakeLists.txt of component wpa_supplicant.
+Call Stack (most recent call first):
+  D:/esp/v6.1-beta1/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  D:/esp/v6.1-beta1/esp-idf/CMakeLists.txt:356 (__component_validation_run_checks)
+
+
+CMake Warning at D:/esp/v6.1-beta1/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  'D:/esp/v6.1-beta1/esp-idf/components/wpa_supplicant/esp_supplicant/src'
+  belongs to component wpa_supplicant but is being used by component
+  esp_wifi.  It is recommended to define the component dependency for
+  esp_wifi on the component wpa_supplicant, i.e.  'idf_component_register(...
+  PRIV_REQUIRES wpa_supplicant)' in the CMakeLists.txt of esp_wifi, and
+  specify the included directory as idf_component_register(...
+  PRIV_INCLUDE_DIRS <dir relative to component>) in the CMakeLists.txt of
+  component wpa_supplicant.
+Call Stack (most recent call first):
+  D:/esp/v6.1-beta1/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  D:/esp/v6.1-beta1/esp-idf/CMakeLists.txt:356 (__component_validation_run_checks)
+
+
+-- Component idf::espressif2022__esp_emote_expression will be linked with -Wl,--whole-archive
+-- Component idf::main will be linked with -Wl,--whole-archive
+-- Components: 78__esp-ml307 78__esp-wifi-connect 78__esp_lcd_nv3023 78__uart-eth-modem 78__uart-uhci 78__xiaozhi-fonts app_update bootloader bootloader_support bt console cube32esp__xpowerslib cxx driver efuse esp-tls esp_adc esp_app_format esp_blockdev esp_bootloader_format esp_coex esp_common esp_driver_bitscrambler esp_driver_cam esp_driver_dma esp_driver_gpio esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_parlio esp_driver_ppa esp_driver_rmt esp_driver_sd_intf esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hal_ana_conv esp_hal_cam esp_hal_clock esp_hal_dma esp_hal_emac esp_hal_gpio esp_hal_gpspi esp_hal_i2c esp_hal_i2s esp_hal_jpeg esp_hal_lcd esp_hal_ledc esp_hal_mspi esp_hal_parlio esp_hal_pmu esp_hal_ppa esp_hal_regi2c esp_hal_rmt esp_hal_rtc_timer esp_hal_sd esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_touch_sens esp_hal_twai esp_hal_uart esp_hal_usb esp_hal_wdt esp_http_client esp_http_server esp_hw_support esp_lcd esp_libc esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_stdio esp_system esp_timer esp_usb_cdc_rom_console esp_wifi esphome__esp-hub75 espressif2022__esp_emote_assets espressif2022__esp_emote_expression espressif2022__esp_emote_gfx espressif2022__image_player espressif__adc_battery_estimation espressif__bmi270_sensor espressif__bq27220 espressif__button espressif__cjson espressif__cmake_utilities espressif__dl_fft espressif__esp-dsp espressif__esp-sr espressif__esp32-camera espressif__esp_audio_codec espressif__esp_audio_effects espressif__esp_cam_sensor espressif__esp_codec_dev espressif__esp_image_effects espressif__esp_io_expander espressif__esp_io_expander_tca9554 espressif__esp_io_expander_tca95xx_16bit espressif__esp_jpeg espressif__esp_lcd_axs15231b espressif__esp_lcd_co5300 espressif__esp_lcd_gc9a01 espressif__esp_lcd_ili9341 espressif__esp_lcd_panel_io_additions espressif__esp_lcd_spd2010 espressif__esp_lcd_st7701 espressif__esp_lcd_st77916 espressif__esp_lcd_st77922 espressif__esp_lcd_st7796 espressif__esp_lcd_touch espressif__esp_lcd_touch_cst816s espressif__esp_lcd_touch_ft5x06 espressif__esp_lcd_touch_gt1151 espressif__esp_lcd_touch_gt911 espressif__esp_lcd_touch_st7123 espressif__esp_lvgl_port espressif__esp_mmap_assets espressif__esp_new_jpeg espressif__esp_sccb_intf espressif__esp_video espressif__freetype espressif__gmf_fft espressif__i2c_bus espressif__iot_eth espressif__iot_usbh_cdc espressif__iot_usbh_rndis espressif__knob espressif__led_strip espressif__mqtt espressif__usb espressif__usb_host_uvc esptool_py fatfs freertos hal heap http_parser laride__heatshrink log lvgl__lvgl lwip m5stack__m5ioe1 m5stack__m5pm1 main mbedtls nvs_flash nvs_sec_provider partition_table pthread sdmmc soc spi_flash spiffs tcp_transport tny-robotics__sh1106-esp-idf txp666__otto-emoji-gif-component vfs waveshare__custom_io_expander_ch32v003 waveshare__esp_lcd_sh8601 waveshare__esp_lcd_touch_cst9217 wear_levelling wpa_supplicant wvirgil123__sscma_client xtensa
+-- Component paths: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/78__esp-ml307 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/78__esp-wifi-connect C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/78__esp_lcd_nv3023 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/78__uart-eth-modem C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/78__uart-uhci C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/78__xiaozhi-fonts D:/esp/v6.1-beta1/esp-idf/components/app_update D:/esp/v6.1-beta1/esp-idf/components/bootloader D:/esp/v6.1-beta1/esp-idf/components/bootloader_support D:/esp/v6.1-beta1/esp-idf/components/bt D:/esp/v6.1-beta1/esp-idf/components/console C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/cube32esp__xpowerslib D:/esp/v6.1-beta1/esp-idf/components/cxx D:/esp/v6.1-beta1/esp-idf/components/driver D:/esp/v6.1-beta1/esp-idf/components/efuse D:/esp/v6.1-beta1/esp-idf/components/esp-tls D:/esp/v6.1-beta1/esp-idf/components/esp_adc D:/esp/v6.1-beta1/esp-idf/components/esp_app_format D:/esp/v6.1-beta1/esp-idf/components/esp_blockdev D:/esp/v6.1-beta1/esp-idf/components/esp_bootloader_format D:/esp/v6.1-beta1/esp-idf/components/esp_coex D:/esp/v6.1-beta1/esp-idf/components/esp_common D:/esp/v6.1-beta1/esp-idf/components/esp_driver_bitscrambler D:/esp/v6.1-beta1/esp-idf/components/esp_driver_cam D:/esp/v6.1-beta1/esp-idf/components/esp_driver_dma D:/esp/v6.1-beta1/esp-idf/components/esp_driver_gpio D:/esp/v6.1-beta1/esp-idf/components/esp_driver_i2c D:/esp/v6.1-beta1/esp-idf/components/esp_driver_i2s D:/esp/v6.1-beta1/esp-idf/components/esp_driver_isp D:/esp/v6.1-beta1/esp-idf/components/esp_driver_jpeg D:/esp/v6.1-beta1/esp-idf/components/esp_driver_ledc D:/esp/v6.1-beta1/esp-idf/components/esp_driver_parlio D:/esp/v6.1-beta1/esp-idf/components/esp_driver_ppa D:/esp/v6.1-beta1/esp-idf/components/esp_driver_rmt D:/esp/v6.1-beta1/esp-idf/components/esp_driver_sd_intf D:/esp/v6.1-beta1/esp-idf/components/esp_driver_sdmmc D:/esp/v6.1-beta1/esp-idf/components/esp_driver_sdspi D:/esp/v6.1-beta1/esp-idf/components/esp_driver_spi D:/esp/v6.1-beta1/esp-idf/components/esp_driver_tsens D:/esp/v6.1-beta1/esp-idf/components/esp_driver_uart D:/esp/v6.1-beta1/esp-idf/components/esp_driver_usb_serial_jtag D:/esp/v6.1-beta1/esp-idf/components/esp_eth D:/esp/v6.1-beta1/esp-idf/components/esp_event D:/esp/v6.1-beta1/esp-idf/components/esp_gdbstub D:/esp/v6.1-beta1/esp-idf/components/esp_hal_ana_conv D:/esp/v6.1-beta1/esp-idf/components/esp_hal_cam D:/esp/v6.1-beta1/esp-idf/components/esp_hal_clock D:/esp/v6.1-beta1/esp-idf/components/esp_hal_dma D:/esp/v6.1-beta1/esp-idf/components/esp_hal_emac D:/esp/v6.1-beta1/esp-idf/components/esp_hal_gpio D:/esp/v6.1-beta1/esp-idf/components/esp_hal_gpspi D:/esp/v6.1-beta1/esp-idf/components/esp_hal_i2c D:/esp/v6.1-beta1/esp-idf/components/esp_hal_i2s D:/esp/v6.1-beta1/esp-idf/components/esp_hal_jpeg D:/esp/v6.1-beta1/esp-idf/components/esp_hal_lcd D:/esp/v6.1-beta1/esp-idf/components/esp_hal_ledc D:/esp/v6.1-beta1/esp-idf/components/esp_hal_mspi D:/esp/v6.1-beta1/esp-idf/components/esp_hal_parlio D:/esp/v6.1-beta1/esp-idf/components/esp_hal_pmu D:/esp/v6.1-beta1/esp-idf/components/esp_hal_ppa D:/esp/v6.1-beta1/esp-idf/components/esp_hal_regi2c D:/esp/v6.1-beta1/esp-idf/components/esp_hal_rmt D:/esp/v6.1-beta1/esp-idf/components/esp_hal_rtc_timer D:/esp/v6.1-beta1/esp-idf/components/esp_hal_sd D:/esp/v6.1-beta1/esp-idf/components/esp_hal_security D:/esp/v6.1-beta1/esp-idf/components/esp_hal_systimer D:/esp/v6.1-beta1/esp-idf/components/esp_hal_timg D:/esp/v6.1-beta1/esp-idf/components/esp_hal_touch_sens D:/esp/v6.1-beta1/esp-idf/components/esp_hal_twai D:/esp/v6.1-beta1/esp-idf/components/esp_hal_uart D:/esp/v6.1-beta1/esp-idf/components/esp_hal_usb D:/esp/v6.1-beta1/esp-idf/components/esp_hal_wdt D:/esp/v6.1-beta1/esp-idf/components/esp_http_client D:/esp/v6.1-beta1/esp-idf/components/esp_http_server D:/esp/v6.1-beta1/esp-idf/components/esp_hw_support D:/esp/v6.1-beta1/esp-idf/components/esp_lcd D:/esp/v6.1-beta1/esp-idf/components/esp_libc D:/esp/v6.1-beta1/esp-idf/components/esp_mm D:/esp/v6.1-beta1/esp-idf/components/esp_netif D:/esp/v6.1-beta1/esp-idf/components/esp_netif_stack D:/esp/v6.1-beta1/esp-idf/components/esp_partition D:/esp/v6.1-beta1/esp-idf/components/esp_phy D:/esp/v6.1-beta1/esp-idf/components/esp_pm D:/esp/v6.1-beta1/esp-idf/components/esp_psram D:/esp/v6.1-beta1/esp-idf/components/esp_ringbuf D:/esp/v6.1-beta1/esp-idf/components/esp_rom D:/esp/v6.1-beta1/esp-idf/components/esp_security D:/esp/v6.1-beta1/esp-idf/components/esp_stdio D:/esp/v6.1-beta1/esp-idf/components/esp_system D:/esp/v6.1-beta1/esp-idf/components/esp_timer D:/esp/v6.1-beta1/esp-idf/components/esp_usb_cdc_rom_console D:/esp/v6.1-beta1/esp-idf/components/esp_wifi C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/esphome__esp-hub75 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif2022__esp_emote_assets C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif2022__esp_emote_expression C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif2022__esp_emote_gfx C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif2022__image_player C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__adc_battery_estimation C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__bmi270_sensor C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__bq27220 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__button C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__cjson C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__cmake_utilities C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__dl_fft C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-dsp C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp-sr C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp32-camera C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_audio_codec C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_audio_effects C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_cam_sensor C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_codec_dev C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_image_effects C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_io_expander C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_io_expander_tca9554 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_io_expander_tca95xx_16bit C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_jpeg C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_axs15231b C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_co5300 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_gc9a01 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_ili9341 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_panel_io_additions C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_spd2010 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_st7701 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_st77916 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_st77922 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_st7796 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_touch C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_touch_cst816s C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_touch_ft5x06 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_touch_gt1151 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_touch_gt911 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lcd_touch_st7123 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_lvgl_port C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_mmap_assets C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_new_jpeg C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_sccb_intf C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__esp_video C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__freetype C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__gmf_fft C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__i2c_bus C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__iot_eth C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__iot_usbh_cdc C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__iot_usbh_rndis C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__knob C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__led_strip C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__mqtt C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__usb C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/espressif__usb_host_uvc D:/esp/v6.1-beta1/esp-idf/components/esptool_py D:/esp/v6.1-beta1/esp-idf/components/fatfs D:/esp/v6.1-beta1/esp-idf/components/freertos D:/esp/v6.1-beta1/esp-idf/components/hal D:/esp/v6.1-beta1/esp-idf/components/heap D:/esp/v6.1-beta1/esp-idf/components/http_parser C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/laride__heatshrink D:/esp/v6.1-beta1/esp-idf/components/log C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/lvgl__lvgl D:/esp/v6.1-beta1/esp-idf/components/lwip C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/m5stack__m5ioe1 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/m5stack__m5pm1 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/main D:/esp/v6.1-beta1/esp-idf/components/mbedtls D:/esp/v6.1-beta1/esp-idf/components/nvs_flash D:/esp/v6.1-beta1/esp-idf/components/nvs_sec_provider D:/esp/v6.1-beta1/esp-idf/components/partition_table D:/esp/v6.1-beta1/esp-idf/components/pthread D:/esp/v6.1-beta1/esp-idf/components/sdmmc D:/esp/v6.1-beta1/esp-idf/components/soc D:/esp/v6.1-beta1/esp-idf/components/spi_flash D:/esp/v6.1-beta1/esp-idf/components/spiffs D:/esp/v6.1-beta1/esp-idf/components/tcp_transport C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/tny-robotics__sh1106-esp-idf C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/txp666__otto-emoji-gif-component D:/esp/v6.1-beta1/esp-idf/components/vfs C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/waveshare__custom_io_expander_ch32v003 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/waveshare__esp_lcd_sh8601 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/waveshare__esp_lcd_touch_cst9217 D:/esp/v6.1-beta1/esp-idf/components/wear_levelling D:/esp/v6.1-beta1/esp-idf/components/wpa_supplicant C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_components/wvirgil123__sscma_client D:/esp/v6.1-beta1/esp-idf/components/xtensa
+-- Configuring done (79.8s)
+-- Generating done (7.2s)
+-- Build files have been written to: C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/build
+[0/4] Re-checking globbed directories...
+[1/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/text_glyph.cc.obj
+[2/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/demuxer/ogg_demuxer.cc.obj
+[3/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/audio_debugger.cc.obj
+[4/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/idle_bg_images.cc.obj
+[5/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/audio_codec.cc.obj
+[6/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/codecs/es8374_audio_codec.cc.obj
+[7/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/codecs/box_audio_codec.cc.obj
+[8/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/codecs/es8311_audio_codec.cc.obj
+[9/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/codecs/es8388_audio_codec.cc.obj
+[10/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/codecs/es8389_audio_codec.cc.obj
+[11/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/codecs/dummy_audio_codec.cc.obj
+[12/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/codecs/no_audio_codec.cc.obj
+[13/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/audio_service.cc.obj
+[14/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/notify/notify_player.cc.obj
+[15/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/led/gpio_led.cc.obj
+[16/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/lvgl_display/lvgl_font.cc.obj
+[17/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/led/circular_strip.cc.obj
+[18/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/display.cc.obj
+[19/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/lvgl_display/lvgl_image.cc.obj
+[20/101] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/display/lvgl_display/gif/gifdec.c.obj
+[21/101] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/display/lvgl_display/jpg/jpeg_to_image.c.obj
+[22/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/led/single_led.cc.obj
+[23/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/lvgl_display/jpg/image_to_jpeg.cpp.obj
+[24/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/weather/weather_service.cc.obj
+[25/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/oled_display.cc.obj
+[26/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/lcd_display.cc.obj
+[27/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/system_info.cc.obj
+[28/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/lvgl_display/lvgl_display.cc.obj
+[29/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/lvgl_display/gif/lvgl_gif.cc.obj
+[30/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/lvgl_display/emoji_collection.cc.obj
+[31/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/settings.cc.obj
+[32/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/device_state_machine.cc.obj
+[33/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/lvgl_display/dynamic_glyph_cache.cc.obj
+[34/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/protocols/text_glyph_payload.cc.obj
+[35/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/lvgl_display/lvgl_theme.cc.obj
+[36/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/display/emote_display.cc.obj
+[37/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/protocols/protocol.cc.obj
+[38/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/ota.cc.obj
+[39/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/protocols/websocket_protocol.cc.obj
+[40/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/protocols/mqtt_protocol.cc.obj
+[41/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/i2c_device.cc.obj
+[42/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/mcp_server.cc.obj
+[43/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/application.cc.obj
+[44/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/knob.cc.obj
+[45/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/adc_battery_monitor.cc.obj
+[46/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/backlight.cc.obj
+[47/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/button.cc.obj
+[48/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/system_reset.cc.obj
+[49/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/board.cc.obj
+[50/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/main.cc.obj
+[51/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/assets.cc.obj
+[52/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/0.ogg.S.obj
+[53/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/1.ogg.S.obj
+[54/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/ml307_board.cc.obj
+[55/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/3.ogg.S.obj
+[56/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/2.ogg.S.obj
+[57/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/4.ogg.S.obj
+[58/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/5.ogg.S.obj
+[59/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/wifi_board.cc.obj
+[60/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/6.ogg.S.obj
+[61/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/dual_network_board.cc.obj
+[62/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/axp2101.cc.obj
+[63/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/9.ogg.S.obj
+[64/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/activation.ogg.S.obj
+[65/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/wake_words/wake_word_audio_cache.cc.obj
+[66/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/upgrade.ogg.S.obj
+[67/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/welcome.ogg.S.obj
+[68/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/nt26_board.cc.obj
+[69/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/wificonfig.ogg.S.obj
+[70/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/exclamation.ogg.S.obj
+[71/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/low_battery.ogg.S.obj
+[72/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/7.ogg.S.obj
+[73/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/success.ogg.S.obj
+[74/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/8.ogg.S.obj
+[75/101] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\wjtwe\Doubao\chats\2026-11-11\new-chat\xiaozhi-esp32\build\bootloader && D:\Espressif\tools\python\v6.1-beta1\venv\Scripts\python.exe D:/esp/v6.1-beta1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/build/bootloader/bootloader.bin"
+
+Bootloader binary size 0x4160 bytes. 0x3ea0 bytes (49%) free.
+
+
+[76/101] No install step for 'bootloader'
+[77/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/err_pin.ogg.S.obj
+[78/101] Completed 'bootloader'
+[79/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/err_reg.ogg.S.obj
+[80/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/press_to_talk_mcp_tool.cc.obj
+[81/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/popup.ogg.S.obj
+[82/101] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/vibration.ogg.S.obj
+[83/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/power_save_timer.cc.obj
+[84/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/sy6970.cc.obj
+[85/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/sleep_timer.cc.obj
+[86/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/wake_words/custom_wake_word.cc.obj
+[87/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/audio/engines/afe_audio_engine.cc.obj
+[88/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/esp_video.cc.obj
+[89/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/esp32_camera.cc.obj
+[90/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/servo/servo_controller.cc.obj
+[91/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/common/rndis_board.cc.obj
+[92/101] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/boards/bread-compact-wifi-lcd/compact_wifi_board_lcd.cc.obj
+[93/101] Linking C static library esp-idf\main\libmain.a
+[94/101] Generating esp-idf/esp_system/ld/sections.ld
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:58: SR_WN_WN9S_HILEXIN: 'default False' 
+is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 
+'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:62: SR_WN_WN9S_HIESP: 'default False' is 
+not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:66: SR_WN_WN9S_NIHAOXIAOZHI: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:70: SR_WN_WN9S_HIJASON: 'default False' 
+is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 
+'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:79: SR_WN_WN9_HILEXIN: 'default False' is
+not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:83: SR_WN_WN9_HIESP: 'default False' is 
+not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:87: SR_WN_WN9L_JA_KONNICHIHAESP_TTS3: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:91: SR_WN_WN9L_FR_BONJOURESP_TTS3: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:95: SR_WN_WN9_NIHAOMIAOBAN_TTS2: 'default
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:99: SR_WN_WN9_XIAOAITONGXUE: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:103: SR_WN_WN9L_XIAOAITONGXUE: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:107: SR_WN_WN9_NIHAOXIAOZHI_TTS: 'default
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:111: SR_WN_WN9L_NIHAOXIAOZHI_TTS3: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:115: SR_WN_WN9_ALEXA: 'default False' is 
+not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:119: SR_WN_WN9_JARVIS_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:123: SR_WN_WN9_COMPUTER_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:127: SR_WN_WN9_HEYWILLOW_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:131: SR_WN_WN9_HIMFIVE: 'default False' 
+is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 
+'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:135: SR_WN_WN9_SOPHIA_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:139: SR_WN_WN9_HEYWANDA_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:143: SR_WN_WN9_HIJOLLY_TTS2: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:147: SR_WN_WN9_HIFAIRY_TTS2: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:151: SR_WN_WN9_HEYPRINTER_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:155: SR_WN_WN9_MYCROFT_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:159: SR_WN_WN9_HIJOY_TTS: 'default False'
+is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 
+'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:163: SR_WN_WN9_HIJASON_TTS2: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:167: SR_WN_WN9_ASTROLABE_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:171: SR_WN_WN9_HEYILY_TTS2: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:175: SR_WN_WN9_BLUECHIP_TTS2: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:179: SR_WN_WN9_HIANDY_TTS2: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:183: SR_WN_WN9_HEYIVY_TTS2: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:187: SR_WN_WN9L_HISTACKCHAN_TTS3: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:191: SR_WN_WN9_HEYKIRA_TTS3: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:195: SR_WN_WN9L_HEYGIGI_TTS3: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:199: SR_WN_WN9_XIAOLONGXIAOLONG_TTS: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:203: SR_WN_WN9_HIMIAOMIAO_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:207: SR_WN_WN9_MIAOMIAOTONGXUE_TTS: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:211: SR_WN_WN9_NIHAOXIAOXIN_TTS: 'default
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:215: SR_WN_WN9_XIAOMEITONGXUE_TTS: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:219: SR_WN_WN9_HILILI_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:223: SR_WN_WN9_HITELLY_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:227: SR_WN_WN9_XIAOBINXIAOBIN_TTS: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:231: SR_WN_WN9_HAIXIAOWU_TTS: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:235: SR_WN_WN9_XIAOYAXIAOYA_TTS2: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:239: SR_WN_WN9_LINAIBAN_TTS2: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:243: SR_WN_WN9_XIAOSUROU_TTS2: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:247: SR_WN_WN9_XIAOYUTONGXUE_TTS2: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:251: SR_WN_WN9_XIAOMINGTONGXUE_TTS2: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:255: SR_WN_WN9_XIAOKANGTONGXUE_TTS2: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:259: SR_WN_WN9_XIAOJIANXIAOJIAN_TTS2: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:263: SR_WN_WN9_XIAOTEXIAOTE_TTS2: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:267: SR_WN_WN9_NIHAOXIAOYI_TTS2: 'default
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:271: SR_WN_WN9_NIHAOBAIYING_TTS2: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:275: SR_WN_WN9_NIHAODONGDONG_TTS2: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:279: SR_WN_WN9_HIWALLE_TTS2: 'default 
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:283: SR_WN_WN9_XIAOLUXIAOLU_TTS2: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:287: SR_WN_WN9_NIHAOXIAOAN_TTS2: 'default
+False' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:291: SR_WN_WN9_NI3HAO3XIAO3MAI4_TTS2: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:295: SR_WN_WN9_NI3HAO3XIAO3RUI4_TTS3: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:299: SR_WN_WN9_HAI1XIAO3OU1_TTS3: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:303: SR_WN_WN9_XIAO3JIA1XIAO3JIA1_TTS3: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:307: SR_WN_WN9_XIAO3FENG1XIAO3FENG1_TTS3:
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:311: SR_WN_WN9_HAI1XIAO3XIANG4_TTS3: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: 
+C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/managed_component
+s/espressif__esp-sr/Kconfig.projbuild:315: SR_WN_WN9L_NI3HAO3XING1BAO3_TTS3: 
+'default False' is not a valid bool value (only 'y' and 'n' are allowed). Value
+is treated as 'n'.
+NOTE: D:/esp/v6.1-beta1/esp-idf/components/bt/host/nimble/Kconfig.in:1421: 
+BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value (only 'y' and
+
+'n' are allowed). Value is treated as 'n'.
+
+NOTE: D:/esp/v6.1-beta1/esp-idf/components/fatfs/Kconfig:240: FATFS_PRINT_LLI: 
+
+'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+
+treated as 'n'.
+
+NOTE: D:/esp/v6.1-beta1/esp-idf/components/fatfs/Kconfig:245: 
+
+FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are 
+
+allowed). Value is treated as 'n'.
+
+Skipping linker fragment parsing, fragment files unchanged
+
+[95/101] Building C object CMakeFiles/xiaozhi.elf.dir/project_elf_src_esp32s3.c.obj
+[96/101] Linking CXX executable xiaozhi.elf
+[97/101] Generating binary image from built executable
+esptool v5.3.1
+
+Creating ESP32-S3 image...
+
+Merged 3 ELF sections.
+
+Successfully created ESP32-S3 image.
+
+Generated C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/build/xiaozhi.bin
+[98/101] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\wjtwe\Doubao\chats\2026-11-11\new-chat\xiaozhi-esp32\build && D:\Espressif\tools\python\v6.1-beta1\venv\Scripts\python.exe D:/esp/v6.1-beta1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/build/partition_table/partition-table.bin C:/Users/wjtwe/Doubao/chats/2026-11-11/new-chat/xiaozhi-esp32/build/xiaozhi.bin"
+xiaozhi.bin binary size 0x2d03b0 bytes. Smallest app partition is 0x3f0000 bytes. 0x11fc50 bytes (29%) free.
+
+
+
+Project build complete. To flash, run:
+ idf.py flash
+or
+ idf.py -p PORT flash
+or
+ python -m esptool --chip esp32s3 -b 460800 --before default-reset --after hard-reset write-flash --flash-mode dio --flash-size 16MB --flash-freq 80m 0x0 build\bootloader\bootloader.bin 0x8000 build\partition_table\partition-table.bin 0xd000 build\ota_data_initial.bin 0x20000 build\xiaozhi.bin 0x800000 build\generated_assets.bin
+or from the "C:\Users\wjtwe\Doubao\chats\2026-11-11\new-chat\xiaozhi-esp32\build" directory
+ python -m esptool --chip esp32s3 -b 460800 --before default-reset --after hard-reset write-flash "@flash_args"

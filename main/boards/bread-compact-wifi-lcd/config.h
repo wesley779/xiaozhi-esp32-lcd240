@@ -32,7 +32,15 @@
 #define BOOT_BUTTON_GPIO        GPIO_NUM_0
 #define TOUCH_BUTTON_GPIO       GPIO_NUM_NC
 #define VOLUME_UP_BUTTON_GPIO   GPIO_NUM_NC
-#define VOLUME_DOWN_BUTTON_GPIO GPIO_NUM_NC
+#define VOLUME_DOWN_BUTTON_GPIO GPIO_NUM_39
+
+// 电池电压采样：BAT+ -- R(100k) -- ADC脚 -- R(100k) -- GND
+// GPIO1 在 ESP32-S3 上是 ADC1_CH0，分压后满电 4.2V -> 2.1V，落在 12dB 档线性区
+#define BATTERY_ADC_PIN        GPIO_NUM_1
+#define BATTERY_UPPER_RESISTOR 100000.0f
+#define BATTERY_LOWER_RESISTOR 100000.0f
+// 板上无充电管理芯片（无 STAT 引脚），充电状态只能靠电压上升软件估算
+#define BATTERY_CHARGING_PIN   GPIO_NUM_NC
 
 
 #define DISPLAY_BACKLIGHT_PIN GPIO_NUM_42
@@ -285,5 +293,15 @@
 
 // A MCP Test: Control a lamp
 #define LAMP_GPIO GPIO_NUM_18
+
+// 24 路舵机控制板（Yeahbot 手册）：用户区 RX1/TX1/GND，只接这三根 + 共地
+// ESP32 GPIO17(TX) -> 控制板 RX1，ESP32 GPIO38(RX) <- 控制板 TX1
+#define SERVO_UART_PORT    1
+#define SERVO_UART_TX_GPIO GPIO_NUM_17
+#define SERVO_UART_RX_GPIO GPIO_NUM_38
+#define SERVO_UART_BAUD    115200
+// 控制板丝印 0-23 共 24 路 PWM 口（协议 Index 为 3 位，000-023）
+#define SERVO_CHANNEL_COUNT 24
+#define SERVO_MAX_CHANNEL   23
 
 #endif // _BOARD_CONFIG_H_

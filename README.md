@@ -1,5 +1,8 @@
 # An MCP-based Chatbot
 
+> **本仓库是 240×240 面包板改造版**（待机三屏 / 24 路舵机 / 电脑状态 / 自生成字库），
+> 改造内容与接线说明见 **[README_BOARD_240.md](README_BOARD_240.md)**。下面是上游原始说明。
+
 (English | [中文](README_zh.md) | [日本語](README_ja.md))
 
 ## Introduction

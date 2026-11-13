@@ -11,12 +11,16 @@ set(SOURCES "audio/audio_codec.cc"
             "audio/codecs/es8388_audio_codec.cc"
             "audio/codecs/es8389_audio_codec.cc"
             "audio/codecs/dummy_audio_codec.cc"
+            "weather/weather_service.cc"
+    "pc/pc_status_service.cc"
             "led/single_led.cc"
             "led/circular_strip.cc"
             "led/gpio_led.cc"
             "display/display.cc"
             "display/text_glyph.cc"
             "display/lcd_display.cc"
+            "display/idle_font_16.c"
+            "display/idle_bg_images.cc"
             "display/oled_display.cc"
             "display/lvgl_display/lvgl_display.cc"
             "display/emote_display.cc"
@@ -68,6 +72,10 @@ if(CONFIG_XIAOZHI_NETWORK_ETHERNET)
     list(APPEND SOURCES "boards/common/ethernet_board.cc")
 endif()
 list(APPEND INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/boards/common)
+
+# 舵机控制板串口客户端（幻尔 LSC-24 类，ASCII 指令）
+list(APPEND SOURCES "servo/servo_controller.cc")
+list(APPEND INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/servo)
 
 
 idf_build_get_property(build_components BUILD_COMPONENTS)
@@ -1218,6 +1226,8 @@ idf_component_register(SRCS ${SOURCES}
                         efuse
                         bt
                         fatfs
+                        esp_http_client
+                        espressif__cjson
                         xiaozhi-fonts
                         ${MAIN_PRIV_REQUIRES_EXTRA}
                     )

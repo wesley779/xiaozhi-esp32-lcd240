@@ -17,6 +17,12 @@
 
 #define TAG "Display"
 
+// 低电量弹窗 + 提示音的开关。本机电池分压尚未标定，电压法容易把“电量”判成 0
+// 而反复弹“请充电”，故默认关闭；要恢复上游行为改成 1 即可。
+#ifndef BATTERY_LOW_WARNING_ENABLE
+#define BATTERY_LOW_WARNING_ENABLE 0
+#endif
+
 LvglDisplay::LvglDisplay() {
     dynamic_glyph_cache_ = std::make_unique<DynamicGlyphCache>();
     // Notification timer
@@ -222,9 +228,12 @@ void LvglDisplay::UpdateStatusBar(bool update_all) {
             int cur_min = tm_now->tm_hour * 60 + tm_now->tm_min;
             if (update_all || cur_min != last_displayed_clock_min_) {
                 last_displayed_clock_min_ = cur_min;
-                char time_str[16];
-                strftime(time_str, sizeof(time_str), "%H:%M", tm_now);
-                SetStatus(time_str);
+                // Displays with an idle home screen paint their own clock there.
+                if (!RenderIdleClock(tm_now, update_all)) {
+                    char time_str[16];
+                    strftime(time_str, sizeof(time_str), "%H:%M", tm_now);
+                    SetStatus(time_str);
+                }
             }
         } else {
             ESP_LOGW(TAG, "System time not set (tm_year=%d)", tm_now->tm_year);
@@ -266,6 +275,7 @@ void LvglDisplay::UpdateStatusBar(bool update_all) {
 
         // Check low battery popup only when clock tick event is triggered
         // Because when initializing, the battery level is not ready yet.
+#if BATTERY_LOW_WARNING_ENABLE
         if (low_battery_popup_ != nullptr && !update_all) {
             if (strcmp(icon, MATERIAL_SYMBOLS_BATTERY_ANDROID_0) == 0 && discharging) {
                 if (lv_obj_has_flag(low_battery_popup_,
@@ -281,6 +291,7 @@ void LvglDisplay::UpdateStatusBar(bool update_all) {
                 }
             }
         }
+#endif  // BATTERY_LOW_WARNING_ENABLE
     }
 
     // Update network icon every 10 seconds

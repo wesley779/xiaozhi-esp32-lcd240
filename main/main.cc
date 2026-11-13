@@ -8,6 +8,8 @@
 #include <freertos/task.h>
 
 #include "application.h"
+#include "weather/weather_service.h"
+#include "pc/pc_status_service.h"
 
 #define TAG "main"
 
@@ -25,5 +27,8 @@ extern "C" void app_main(void)
     // Initialize and run the application
     auto& app = Application::GetInstance();
     app.Initialize();
+    // Background weather updates for the idle home screen
+    WeatherService::GetInstance().Start();
+    PcStatusService::GetInstance().Start();
     app.Run();  // This function runs the main event loop and never returns
 }
